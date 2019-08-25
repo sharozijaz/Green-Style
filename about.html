@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.body{
+    box-sizing:border-box;
+}
+.wrapper {
+    width: 1300px;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(50, 255, 106,0.5);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.box{
+  position:absolute;
+  top:70%;
+  left:50%;
+  transform : translate(-50% ,-50%);
+  text-align: center;
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 20px;
+  
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background:#62eb7d;
+  color:#000;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #94fc13;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+</style>
+<body>
+    
+        <div class="main-menu">
+                <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="https://frostgiant.blogspot.com">My Blog</a></li>
+                <li><a href="https://github.com/sharozijaz">GitHub</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="slider"></li>
+              </ul>
+              </div>
+
+            
+              <div class="wrapper clearfix">
+                    <h1 style="color: #f4ff61;font-size: 2rm" align="center" >My Introduction</h1>
+                    <p style="color: #f4ff61;font-size: 1rm" align="center">Hi, 
+                            My name is Sharoz Ijaz,and I am a Web Developer. A year ago I completed my College Education with ICS Degree.
+                          After My College i have faced my Worst Nightmare that due to My Disabilty to Walk i have to search for University that would be compatible with Wheelchair Asscebilty, but Unfortunatly there is No Such University avilible around my area, So i thought why not i Study at home with the Subjects that i Like and Only Focus on What i want to Be in Future, So i Started Finding Latest Technology Trends in markets and mostly those who have Bright Future,i came up with very unique skills which i thought might local Universities may not tech so i picked "Two" Skills sets :
+                          
+                          Web Development
+                          Artifical Inteligence
+                          I Select Web Development as My first Skill because now days You just can't build Web Site you can also build Web Apps,Android App(With help of React Native ),and much more as you increase your Knowledge of Programming.So i start Learning it and then mastering it, it was a Cool Experience. 
+                          Now after Working hard on My Skills Set i am Fully Confident about My Self. Now I can Develop WordPress Websites with SEO Integration, Can Build Web Apps Using React, Can Develop Programming Based Websites, Do SEO(Search Engine Optimization), Social Media Marketing and Affiliate Marketing for Small Bloggers.</p>
+
+                          <div class="box">
+                                <a href="#" class="btn btn-white btn-animation-1">Contact Me</a> 
+                              </div> 
+                   </div>             
+</body>
+</html>
